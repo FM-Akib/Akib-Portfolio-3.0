@@ -1,0 +1,109 @@
+[
+    {
+      "skillName": "HTML",
+      "img": "https://i.ibb.co/b5FXhQB/HTML.png",
+      "yearOfExperience": 4,
+      "description": "Proficient in creating and structuring web content using HTML.",
+      "level": "Advanced"
+    },
+    {
+      "skillName": "CSS",
+      "img": "https://i.ibb.co/k35kfL8/css.png",
+      "yearOfExperience": 4,
+      "description": "Skilled in styling web pages with CSS, including layout and design principles.",
+      "level": "Advanced"
+    },
+    {
+      "skillName": "Tailwind",
+      "img": "https://i.ibb.co/FDtTdqd/Tailwind.png",
+      "yearOfExperience": 2,
+      "description": "Experienced in using Tailwind CSS to quickly style web applications.",
+      "level": "Advanced"
+    }
+    ,
+    {
+      "skillName": "Bootstrap",
+      "img": "https://i.ibb.co/6rJHzjX/bootstrap.png",
+      "yearOfExperience": 2,
+      "description": "Experienced in using Tailwind CSS to quickly style web applications.",
+      "level": "Intermediate"
+    },
+    {
+      "skillName": "React",
+      "img": "https://i.ibb.co/znqS4NZ/react.png",
+      "yearOfExperience": 3,
+      "description": "Skilled in developing single-page applications using React, Redux, and related technologies.",
+      "level": "Intermediate"
+    },
+    {
+      "skillName": "JavaScript",
+      "img": "https://i.ibb.co/whZVtNp/Java-Script.png",
+      "yearOfExperience": 5,
+      "description": "Experienced in building web applications using vanilla JavaScript and modern frameworks.",
+      "level": "Advanced"
+    },
+    {
+        "skillName": "DOM",
+        "img": "https://i.ibb.co/vcLZJ9T/dom.png",
+        "yearOfExperience": 5,
+        "description": "Experienced in building web applications using vanilla JavaScript and modern frameworks.",
+        "level": "Advanced"
+    },
+    {
+        "skillName": "Firebase",
+        "img": "https://i.ibb.co/GtMGcgS/firebase.png",
+        "yearOfExperience": 5,
+        "description": "Experienced in building web applications using vanilla JavaScript and modern frameworks.",
+        "level": "Advanced"
+    },
+    {
+      "skillName": "Express.js",
+      "img": "https://i.ibb.co/pfZ8c1N/ex.png",
+      "yearOfExperience": 3,
+      "description": "Experienced in building backend services and APIs using Express.js and Node.js.",
+      "level": "Intermediate"
+    },
+    {
+      "skillName": "MongoDB",
+      "img": "https://i.ibb.co/3TfxjP4/mongoDB.png",
+      "yearOfExperience": 3,
+      "description": "Proficient in using MongoDB for database management in web applications.",
+      "level": "Intermediate"
+    },
+    {
+      "skillName": "C/C++ Programming",
+      "img": "https://i.ibb.co/H7kDZkb/C.png",
+      "yearOfExperience": 4,
+      "description": "Experienced in system programming and algorithm development using C.",
+      "level": "Advanced"
+    },
+    {
+      "skillName": "Node js",
+      "img": "https://i.ibb.co/pd2Ds1q/node-js.png",
+      "yearOfExperience": 4,
+      "description": "Skilled in object-oriented programming and software development using C++.",
+      "level": "Advanced"
+    },
+    {
+      "skillName": "Java",
+      "img": "https://i.ibb.co/vxYw5Ff/Java.png",
+      "yearOfExperience": 4,
+      "description": "Proficient in building cross-platform applications and web services using Java.",
+      "level": "Intermediate"
+    },
+    {
+      "skillName": "JWT",
+      "img": "https://i.ibb.co/SRh3Jzf/jwt.png",
+      "yearOfExperience": 2,
+      "description": "Experienced in implementing authentication and authorization using JSON Web Tokens.",
+      "level": "Intermediate"
+    },
+    {
+      "skillName": "Next.js",
+      "img": "https://i.ibb.co/7GwVkWZ/nextjs.png",
+      "yearOfExperience": 2,
+      "description": "Skilled in building server-side rendered applications using Next.js.",
+      "level": "Intermediate"
+    }
+  ]
+  
