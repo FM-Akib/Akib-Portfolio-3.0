@@ -54,13 +54,13 @@ const Hero = () => {
                 </div>
                 </div>
           
-            <p className="mt-6 md:mt-10 text-md lg:text-md text-center md:text-left text-gray-600  leading-relaxed">
-               Hi, I specialize in MERN Stack web development, proficiently navigating through HTML, CSS, Tailwind, React, JavaScript, Express.js, and MongoDB. Beyond the technicalities, I am adept in C and C++, with a keen eye for optimizing code and enhancing performance. As an undergraduate Teaching Assistant in Object-Oriented Programming C++, I've honed my skills in guiding and mentoring others through complex programming concepts.
+                <p className="mt-6 md:mt-10 text-md lg:text-md text-center md:text-left text-gray-600 leading-relaxed">
+  {`Hi, I specialize in MERN Stack web development, proficiently navigating through HTML, CSS, Tailwind, React, JavaScript, Express.js, and MongoDB. Beyond the technicalities, I am adept in C and C++, with a keen eye for optimizing code and enhancing performance. As an undergraduate Teaching Assistant in Object-Oriented Programming C++, I've honed my skills in guiding and mentoring others through complex programming concepts.`}
+</p>
 
-            </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start">
                 <button className="w-full flex items-center justify-center sm:w-40 px-4 py-3 rounded font-semibold text-md bg-emerald-500 text-white border-2 border-emerald-500">Contact Me <FaRegArrowAltCircleRight className='ml-2' /></button>
-                <button className="w-full flex items-center justify-center mt-4 sm:mt-0 sm:ml-4 sm:w-40 px-4 py-3 rounded font-semibold text-md bg-white hover:bg-slate-100 text-emerald-500 border-2 border-gray-300">Resume <LuDownload className='ml-2' />
+                <button className="w-full flex items-center justify-center mt-4 sm:mt-0 sm:ml-4 sm:w-40 px-4 py-3 rounded font-semibold text-md bg-white hover:bg-slate-100 text-emerald-500 border-2 border-emerald-200">Resume <LuDownload className='ml-2' />
                 </button>
             </div>
         </div>

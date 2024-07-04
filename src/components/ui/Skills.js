@@ -2,6 +2,7 @@
 import { getSkills } from '@/utiles/getSkills';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import { AiOutlineCode } from "react-icons/ai";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
@@ -15,13 +16,13 @@ const Skills = () => {
     fetchSkills();
   }, []);
 
-  console.log(skills)
+  // console.log(skills)
 
   return (
     <>
       <div className="text-center p-10">
-        <h1 className="font-bold text-3xl text-gray-700 mb-2">Skills</h1>
-        <h1 className="text-xl text-gray-600">Tailwind CSS</h1>
+        <h1 className="font-bold text-3xl text-gray-700 mb-2 flex items-center justify-center"><AiOutlineCode class="mr-1 "/>My Skills</h1>
+        <h1 className="text-md text-gray-600">My Technical Proficiencies and Tools of the Trade</h1>
       </div>
 
       <section
