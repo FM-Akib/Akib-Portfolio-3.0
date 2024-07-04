@@ -4,9 +4,15 @@
 
 /* Joti One Font */
 @import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 .joti-one-regular {
   font-family: "Joti One", serif;
   font-weight: 800;
   font-style: normal;
   font-size: 1.7em;
+}
+.caveat-brush-regular {
+  font-family: "Caveat Brush", cursive;
+  font-weight: 800;
+  font-style: normal;
 }
