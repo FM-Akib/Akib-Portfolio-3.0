@@ -50,22 +50,22 @@ const Navbar = () => {
           <h1 className="text-2xl font-semibold">Sidebar</h1>
           <ul className="mt-4">
             <li className="mb-2">
-              <a href="#" className="block hover:text-indigo-400">
+              <a href="#" className="block hover:text-green-400">
                 Home
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="block hover:text-indigo-400">
+              <a href="#" className="block hover:text-green-400">
                 About
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="block hover:text-indigo-400">
+              <a href="#" className="block hover:text-green-400">
                 Services
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="block hover:text-indigo-400">
+              <a href="#" className="block hover:text-green-400">
                 Contact
               </a>
             </li>
@@ -77,9 +77,9 @@ const Navbar = () => {
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Navbar */}
         <div className=" ">
-          <div className="container mx-auto md:flex md:items-center md:justify-between ">
+          <div className="container mx-auto md:flex md:items-center md:justify-between md:px-28 ">
             <div className="flex justify-between items-center py-4 px-2">
-              <h1 className="  font-extrabold text-2xl text-gray-700">Akib</h1>
+              <h1 className="  font-extrabold text-2xl text-gray-700 ">Akib</h1>
               <button
                 id="open-sidebar"
                 onClick={toggleSidebar}
@@ -121,24 +121,24 @@ const Navbar = () => {
               </button>
             </div>
             {isMdScreen && (
-              <ul className="flex space-x-8 mx-auto">
+              <ul className="flex space-x-8 ">
                 <li>
-                  <a href="#" className="hover:text-indigo-400">
+                  <a href="#" className="hover:text-green-400">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-indigo-400">
+                  <a href="#" className="hover:text-green-400">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-indigo-400">
+                  <a href="#" className="hover:text-green-400">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-indigo-400">
+                  <a href="#" className="hover:text-green-400">
                     Contact
                   </a>
                 </li>
