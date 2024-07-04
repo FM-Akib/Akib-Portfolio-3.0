@@ -1,3 +1,4 @@
+import Education from "@/components/ui/Education";
 import Hero from "@/components/ui/Hero";
 import Projects from "@/components/ui/Projects";
 import Skills from "@/components/ui/Skills";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero/>
       <Projects/>
       <Skills/>
+      <Education/>
     </main>
   );
 }
