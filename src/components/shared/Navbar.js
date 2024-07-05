@@ -18,9 +18,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-[#EFFBE3]">
         <header>
-          <nav className="fixed z-40 w-full border-b bg-white md:absolute md:bg-transparent">
+          <nav className="fixed z-40 w-full border-b bg-[#EFFBE3] md:absolute md:bg-transparent">
             <div className="container m-auto px-2 md:px-12 lg:px-7">
               <div className="flex px-6 md:px-0 z-20 flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
                 <input type="checkbox" name="" id="toggleNav" className="peer hidden" />
@@ -81,6 +81,17 @@ const Navbar = () => {
                               before:absolute before:-bottom-2 md:before:-bottom-7 before:origin-left before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
                           >
                             <span className="transition group-hover:text-cyan-700">Education</span>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li className="max-w-max">
+                        <a href="#award" className="block md:px-3 group">
+                          <div
+                            className="relative text-gray-600
+                              before:absolute before:-bottom-2 md:before:-bottom-7 before:origin-left before:w-full before:h-0.5 before:mx-auto before:mt-auto before:rounded-full before:bg-cyan-800 before:transition before:scale-x-0 group-hover:before:scale-x-100"
+                          >
+                            <span className="transition group-hover:text-cyan-700">Achievements</span>
                           </div>
                         </a>
                       </li>
