@@ -1,33 +1,24 @@
-import Footer from "@/components/shared/Footer";
-import Award from "@/components/ui/Award";
-import Cirtification from "@/components/ui/Cirtification";
-import Education from "@/components/ui/Education";
-import Hero from "@/components/ui/Hero";
-import Projects from "@/components/ui/Projects";
-import Skills from "@/components/ui/Skills";
+import Footer from '@/components/shared/Footer';
+import Award from '@/components/ui/Award';
+import Cirtification from '@/components/ui/Cirtification';
+import Education from '@/components/ui/Education';
+import Hero from '@/components/ui/Hero';
+import Projects from '@/components/ui/Projects';
+import Skills from '@/components/ui/Skills';
+import React from 'react';
 
-export default function Home() {
+const Home = () => {
   return (
-    <main>
-      <section id="hero">
-        <Hero />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-      <section id="award">
-        <Award />
-      </section>
-      <section id="cirtification">
-        <Cirtification />
-      </section>
-      <section id="education">
-        <Education />
-      </section>
-      <Footer />
-    </main>
+    <>
+    <Hero />
+    <Projects />
+    <Skills />
+    <Award />
+    <Cirtification />
+    <Education />
+    <Footer />
+    </>
   );
-}
+};
+
+export default Home;
