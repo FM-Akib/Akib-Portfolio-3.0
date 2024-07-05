@@ -1,8 +1,8 @@
+import Award from "@/components/ui/Award";
 import Education from "@/components/ui/Education";
 import Hero from "@/components/ui/Hero";
 import Projects from "@/components/ui/Projects";
 import Skills from "@/components/ui/Skills";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Hero/>
       <Projects/>
       <Skills/>
+      <Award/>
       <Education/>
     </main>
   );
