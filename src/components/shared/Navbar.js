@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import '../../app/globals.css'
+import Image from 'next/image';
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isMdScreen, setIsMdScreen] = useState(window.innerWidth >= 768);
@@ -79,7 +80,12 @@ const Navbar = () => {
         <div className=" ">
           <div className="container mx-auto md:flex md:items-center md:justify-between md:px-28 ">
             <div className="flex justify-between items-center py-4 px-2">
-              <h1 className="  font-extrabold text-2xl text-gray-700 ">Akib</h1>
+              {/* <h1 className="  font-extrabold text-2xl text-gray-700 ">Akib</h1> */}
+            <Image src="https://i.ibb.co/rMnc58H/logo.png" alt="logo akib" class=" border-emerald-200 border-b " width={160} height={60} />
+
+
+
+
               <button
                 id="open-sidebar"
                 onClick={toggleSidebar}
@@ -129,17 +135,22 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400">
-                    About
+                    Award
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400">
-                    Services
+                    Education
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-green-400">
-                    Contact
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-green-400">
+                    Skills
                   </a>
                 </li>
               </ul>

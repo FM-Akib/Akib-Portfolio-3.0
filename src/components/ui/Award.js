@@ -39,7 +39,7 @@ const Award = () => {
             <div class="xl:container mx-auto flex justify-center px-6 md:px-12">
             
             <div class="mb-4 md:w-2/3 lg:w-1/2 ">
-                <h2 class="mb-2 text-xl font-bold text-center text-gray-800  md:text-3xl flex items-center justify-center">
+                <h2 class="mb-2 font-bold text-center text-gray-800  text-2xl md:text-3xl flex items-center justify-center">
                 <BsAward class="mr-1 " />
                 Awards & Achievements
                 </h2>

@@ -1,4 +1,6 @@
+import Footer from "@/components/shared/Footer";
 import Award from "@/components/ui/Award";
+import Cirtification from "@/components/ui/Cirtification";
 import Education from "@/components/ui/Education";
 import Hero from "@/components/ui/Hero";
 import Projects from "@/components/ui/Projects";
@@ -12,7 +14,9 @@ export default function Home() {
       <Projects/>
       <Skills/>
       <Award/>
+      <Cirtification/>
       <Education/>
+      <Footer/>
     </main>
   );
 }

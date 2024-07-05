@@ -5,7 +5,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 const Education = () => {
     return (
-        <div class=" p-4">
+        <div class=" p-4 mt-10 md:mt-20">
     {/* <h2 class="text-3xl text-white font-bold mb-12">Chronology</h2> */}
     <div class="mb-12 space-y-2 text-center">
             <h2 class="text-3xl font-bold text-gray-800 md:text-4xl flex items-center justify-center"><FaGraduationCap class="mr-1 " />Education</h2>
