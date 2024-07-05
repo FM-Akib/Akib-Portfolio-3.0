@@ -10,13 +10,25 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-    <Hero />
-    <Projects />
-    <Skills />
-    <Award />
-    <Cirtification />
-    <Education />
-    <Footer />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="award">
+        <Award />
+      </section>
+      <section id="certification">
+        <Cirtification />
+      </section>
+      <section id="education">
+        <Education />
+      </section>
+      <Footer />
     </>
   );
 };
