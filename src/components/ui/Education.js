@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoCalendarOutline } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa6";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 const Education = () => {
     return (
@@ -19,7 +20,7 @@ const Education = () => {
                 class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                 <h3 class="text-lg font-semibold ">B.Sc (Engg.) in CSE</h3>
                 <p class="mt-1 text-sm leading-6 ">International Islamic University Chittagong.</p>
-                <p class=" text-sm leading-6 ">Chattogram, Bangladesh.</p>
+                <p class=" text-sm leading-6 flex items-center"><MdOutlineLocationOn className='mr-1' />Chattogram, Bangladesh.</p>
                 <span class="absolute text-sm text-gray-500 -top-5 left-2 whitespace-nowrap flex items-center"><IoCalendarOutline class="mr-1" />2021-2024.</span>
             </div>
             <div class="relative col-start-5 col-end-6 mr-7 md:mx-auto">
@@ -39,9 +40,9 @@ const Education = () => {
                 <div class="absolute w-6 h-6 -mt-3 bg-white border-4 border-emerald-400 rounded-full top-1/2"></div>
             </div>
             <div class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
-                <h3 class="text-lg font-semibold ">Higher Secondary School Certificate (Science).</h3>
+                <h3 class="text-lg font-semibold ">Higher Secondary School Certificate (Science)</h3>
                 <p class="mt-1 text-sm leading-6">Cumilla Victoria Government college.</p>
-                <p class=" text-sm leading-6 ">Cumilla, Bangladesh.</p>
+                <p class=" text-sm leading-6 flex items-center"><MdOutlineLocationOn className='mr-1' />Cumilla, Bangladesh.</p>
 
                 <span class="absolute text-sm text-gray-500 -top-5 left-2 whitespace-nowrap flex items-center"><IoCalendarOutline class="mr-1" />
                 2017-2019.</span>
@@ -53,7 +54,7 @@ const Education = () => {
                 class="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                 <h3 class="text-lg font-semibold ">Secondary School Certificate (Science)</h3>
                 <p class="mt-1 text-sm leading-6">J, B High School.</p>
-                <p class=" text-sm leading-6 ">Jorargonj, Mirsarai, Chittagong.</p>
+                <p class=" text-sm leading-6 flex items-center"> <MdOutlineLocationOn className='mr-1' />Jorargonj, Mirsarai, Chittagong.</p>
 
                 <span class="absolute text-sm text-gray-500 -top-5 left-2 whitespace-nowrap flex items-center"><IoCalendarOutline class="mr-1" />2009-2017.</span>
             </div>
