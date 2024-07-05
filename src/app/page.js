@@ -8,15 +8,26 @@ import Skills from "@/components/ui/Skills";
 
 export default function Home() {
   return (
-    <main className="">
-     
-      <Hero/>
-      <Projects/>
-      <Skills/>
-      <Award/>
-      <Cirtification/>
-      <Education/>
-      <Footer/>
+    <main>
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="award">
+        <Award />
+      </section>
+      <section id="cirtification">
+        <Cirtification />
+      </section>
+      <section id="education">
+        <Education />
+      </section>
+      <Footer />
     </main>
   );
 }

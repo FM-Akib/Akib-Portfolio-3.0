@@ -59,9 +59,14 @@ const Hero = () => {
 </p>
 
             <div className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start">
+                <Link href="https://www.linkedin.com/in/fahim-muntasir-akib/" class="cursor-pointer">
                 <button className="w-full flex items-center justify-center sm:w-40 px-4 py-3 rounded font-semibold text-md bg-emerald-500 text-white border-2 border-emerald-500">Contact Me <FaRegArrowAltCircleRight className='ml-2' /></button>
+                </Link>
+               
+               <Link class="cursor-pointer" href="https://drive.google.com/file/d/16QxDGtNJFIDVwykuu5bWUW48iypmB_Hk/view">
                 <button className="w-full flex items-center justify-center mt-4 sm:mt-0 sm:ml-4 sm:w-40 px-4 py-3 rounded font-semibold text-md bg-white hover:bg-slate-100 text-emerald-500 border-2 border-emerald-200">Resume <LuDownload className='ml-2' />
                 </button>
+                </Link>
             </div>
         </div>
 

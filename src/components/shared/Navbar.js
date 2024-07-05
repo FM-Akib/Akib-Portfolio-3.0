@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../app/globals.css'
 import Image from 'next/image';
+
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isMdScreen, setIsMdScreen] = useState(window.innerWidth >= 768);
@@ -37,6 +38,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className=" h-16 flex overflow-hidden">
       {/* Sidebar */}
@@ -51,23 +59,28 @@ const Navbar = () => {
           <h1 className="text-2xl font-semibold">Sidebar</h1>
           <ul className="mt-4">
             <li className="mb-2">
-              <a href="#" className="block hover:text-green-400">
+              <a href="#" className="block hover:text-green-400" onClick={() => handleScrollToSection('hero')}>
                 Home
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="block hover:text-green-400">
-                About
+              <a href="#" className="block hover:text-green-400" onClick={() => handleScrollToSection('award')}>
+                Award
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="block hover:text-green-400">
-                Services
+              <a href="#" className="block hover:text-green-400" onClick={() => handleScrollToSection('education')}>
+                Education
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="block hover:text-green-400">
-                Contact
+              <a href="#" className="block hover:text-green-400" onClick={() => handleScrollToSection('projects')}>
+                Projects
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#" className="block hover:text-green-400" onClick={() => handleScrollToSection('skills')}>
+                Skills
               </a>
             </li>
           </ul>
@@ -81,10 +94,7 @@ const Navbar = () => {
           <div className="container mx-auto md:flex md:items-center md:justify-between md:px-28 ">
             <div className="flex justify-between items-center py-4 px-2">
               {/* <h1 className="  font-extrabold text-2xl text-gray-700 ">Akib</h1> */}
-            <Image src="https://i.ibb.co/rMnc58H/logo.png" alt="logo akib" class=" border-emerald-200 border-b " width={160} height={60} />
-
-
-
+              <Image src="https://i.ibb.co/rMnc58H/logo.png" alt="logo akib" className="border-emerald-200 border-b" width={160} height={60} />
 
               <button
                 id="open-sidebar"
@@ -129,38 +139,34 @@ const Navbar = () => {
             {isMdScreen && (
               <ul className="flex space-x-8 ">
                 <li>
-                  <a href="#" className="hover:text-green-400">
+                  <button  className="hover:text-green-400" onClick={() => handleScrollToSection('hero')}>
                     Home
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400">
+                  <button  className="hover:text-green-400" onClick={() => handleScrollToSection('award')}>
                     Award
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400">
+                  <button className="hover:text-green-400" onClick={() => handleScrollToSection('education')}>
                     Education
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400">
+                  <button  className="hover:text-green-400" onClick={() => handleScrollToSection('projects')}>
                     Projects
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-green-400">
+                  <button  className="hover:text-green-400" onClick={() => handleScrollToSection('skills')}>
                     Skills
-                  </a>
+                  </button>
                 </li>
               </ul>
             )}
           </div>
         </div>
-        
-
-
-
       </div>
     </div>
   );
