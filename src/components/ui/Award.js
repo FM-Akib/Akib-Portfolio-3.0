@@ -1,7 +1,9 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { BsFillAwardFill } from "react-icons/bs";
+import { BsAward } from "react-icons/bs";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,23 +15,36 @@ import '../../app/swiper.css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
+import { getAwards } from '@/utiles/getAward';
 
 
 const Award = () => {
     
+    const [awards, setawards] = useState([]);
+
+    useEffect(() => {
+      const fetchawards = async () => {
+        const awardsData = await getAwards();
+        setawards(awardsData);
+      };
+  
+      fetchawards();
+    }, []);
+
+//  console.log(awards)
 
     return (
         <>
-        <div class="py-20">
+        <div class="py-2">
             <div class="xl:container mx-auto flex justify-center px-6 md:px-12">
             
-            <div class="mb-16 md:w-2/3 lg:w-1/2 ">
-                <h2 class="mb-4 text-2xl font-bold text-center text-gray-800  md:text-4xl">
-                    Tailus blocks leadership
+            <div class="mb-4 md:w-2/3 lg:w-1/2 ">
+                <h2 class="mb-2 text-xl font-bold text-center text-gray-800  md:text-3xl flex items-center justify-center">
+                <BsAward class="mr-1 " />
+                Awards & Achievements
                 </h2>
-                <p class="text-gray-600 ">
-                    Tailus prides itself not only on award-winning technology, but also on the talent of its
-                    people of some of the brightest minds and most experienced executives in business.
+                <p class="text-gray-600 text-center">
+                Recognizing Excellence and Innovation - A Journey of Milestones and Honors
                 </p>
                 </div>
             </div>
@@ -38,7 +53,7 @@ const Award = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -48,36 +63,32 @@ const Award = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            
-          <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
-            <Image
-            class="mx-auto h-[26rem] w-full grayscale object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-            src="https://i.ibb.co/WvnRBPd/interactive-Cares.png"
-            alt="woman"
-            loading="lazy"
-            width={840}
-            height={805}
-            />
-            <div class="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
-            <div>
-                <h4 class="text-xl font-semibold dark:text-gray-700 text-white">Hentoni Doe</h4>
-                <span class="block text-sm text-gray-500">CEO-Founder</span>
-            </div>
-            <p class="mt-8 text-gray-300 dark:text-gray-600">Quae labore quia tempora dolor impedit. Possimus, sint ducimus ipsam?</p>
-            </div>
+ 
 
-            </div>
-                                    
-          </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+        {
+            awards?.map((award,i)=><SwiperSlide key={i}>
+            
+                <div class="group relative rounded-3xl  space-y-6 overflow-hidden">
+                  <Image
+                  class="mx-auto h-[22rem] w-full  object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                  src={award.img}
+                  alt="image"
+                  width={740}
+                  height={705}
+                  />
+                  <div class="absolute bottom-0 inset-x-0 h-max mt-auto px-8 md:pb-20 py-4 md:py-6 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
+                  <div>
+                      <h4 class= "text-md md:text-lg font-semibold text-gray-700  ">{award.competitionTitle}</h4>
+                      <span class=" text-sm text-white mt-1 flex items-center justify-center "> <span class="bg-emerald-700 px-3 py-1 rounded-lg font-semibold flex items-center justify-center"> <BsFillAwardFill class="mr-1 text-yellow-500" />{award.position}</span></span>
+                  </div>
+                  <p class="mt-2  text-sm text-gray-600">{award.description}</p>
+                  </div>
+      
+                  </div>
+                                          
+                </SwiperSlide>)
+        }
+        
         </Swiper>
       </>
     );

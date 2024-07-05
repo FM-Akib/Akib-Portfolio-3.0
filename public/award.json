@@ -1,0 +1,45 @@
+[
+    {
+        "competitionTitle": "Interactive Cares Presents Idea Innovations 4.0",
+        "img": "https://i.ibb.co/WvnRBPd/interactive-Cares.png",
+        "position": "Runners-up",
+        "description": "Category - Idea Generation. Team - IIUC Hatti Matim Tim."
+    },
+    {
+        "competitionTitle": "Hult Prize at International Islamic University Chittagong",
+        "img": "https://i.ibb.co/dfnzMcC/Hult-prize.png",
+        "position": "Runners-up",
+        "description": "Category - Idea Generation. Team - IIUC Hatti Matim Tim."
+    },
+    {
+      "competitionTitle": "IIUC Tech Fest 2023",
+      "img": "https://i.ibb.co/myXqqZ5/Techfest.png",
+      "position": "Champion",
+      "description": "Category - Idea Generation. Team - IIUC Hatti Matim Tim."
+    },
+    {
+      "competitionTitle": "Liberates Lab Presents AI Hackathon",
+      "img": "https://i.ibb.co/v1Xf1H7/liberate-Labs.png",
+      "position": "Runners-up",
+      "description": "Team - IIUC Hatti Matim Tim."
+    },
+    {
+      "competitionTitle": "13th National Undergraduate Mathematics Olympiad 2022",
+      "img": "https://i.ibb.co/yBTW0c2/Math-Olympiad.png",
+      "position": "Participant",
+      "description": "I had the incredible opportunity to represent my university and participate in the 13th National Undergraduate Mathematics Olympiad 2022."
+    },
+    {
+      "competitionTitle": "Mentor in CSE-1222 Computer Programming I Lab",
+      "img": "https://i.ibb.co/CWNMCKQ/mentor.png",
+      "position": "Honored",
+      "description": "I am honored to have served as a mentor while working as a teaching assistant in the CSE-1222 Computer Programming I Lab under the guidance of Muhammad Nazmul Arefin sir."
+    },
+    {
+        "competitionTitle": "Restaurant Management System Using OOP",
+        "img": "https://i.ibb.co/kmJw4bZ/cpp-Projectshowcase.png",
+        "position": "Champion",
+        "description": "Category - C++ Project Showcasing. Team - IIUC Hatti Matim Tim."
+      }
+  ]
+  

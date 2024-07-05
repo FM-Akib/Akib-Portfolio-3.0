@@ -38,3 +38,53 @@
     height: 100%;
     object-fit: cover;
   }
+  .swiper-button-next,
+.swiper-button-prev {
+    color: #00b928; 
+}
+
+/* Default positioning for larger screens */
+.swiper-button-next {
+    right: 200px; /* Adjust this value to move the button closer to the image */
+   
+}
+
+.swiper-button-prev {
+    left: 200px; /* Adjust this value to move the button closer to the image */
+    
+}
+
+/* Center the arrows vertically */
+.swiper-button-next,
+.swiper-button-prev {
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+/* Optional: Adjust the size of the arrow icons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 28px;
+}
+
+/* Adjust positioning for medium screens (tablets) */
+@media (max-width: 1024px) {
+    .swiper-button-next {
+        right: 50px; /* Adjust this value for tablets */
+    }
+
+    .swiper-button-prev {
+        left: 50px; /* Adjust this value for tablets */
+    }
+}
+
+/* Adjust positioning for small screens (mobile phones) */
+@media (max-width: 768px) {
+    .swiper-button-next {
+        right: 10px; /* Adjust this value for mobile phones */
+    }
+
+    .swiper-button-prev {
+        left: 10px; /* Adjust this value for mobile phones */
+    }
+}
