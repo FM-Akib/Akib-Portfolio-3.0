@@ -1,4 +1,5 @@
 import Footer from '@/components/shared/Footer';
+import About from '@/components/ui/About';
 import Award from '@/components/ui/Award';
 import Cirtification from '@/components/ui/Cirtification';
 import Education from '@/components/ui/Education';
@@ -28,6 +29,9 @@ const Home = () => {
       <section id="education">
         <Education />
       </section>
+      
+      <About/>
+
       <Footer />
     </>
   );

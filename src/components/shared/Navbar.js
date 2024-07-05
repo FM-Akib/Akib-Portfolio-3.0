@@ -1,12 +1,26 @@
+"use client";
+import React, { useEffect } from 'react';
 import Image from 'next/image';
-import React from 'react';
 
 const Navbar = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.innerHTML = `
+      kofiWidgetOverlay.draw('mohamedghulam', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#323842',
+        'floating-chat.donateButton.text-color': '#fff'
+      });
+    `;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <>
-      
-      <header>
-          <nav className="fixed z-40 w-full border-b bg-[#EFFBE3] md:absolute md:bg-transparent">
+      <div className="bg-white">
+        <header>
+          <nav className="fixed z-40 w-full border-b bg-white md:absolute md:bg-transparent">
             <div className="container m-auto px-2 md:px-12 lg:px-7">
               <div className="flex px-6 md:px-0 z-20 flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
                 <input type="checkbox" name="" id="toggleNav" className="peer hidden" />
@@ -74,10 +88,10 @@ const Navbar = () => {
                     <div className="flex sm:hidden pt-4 w-full">
                       <button
                         type="button"
-                        title="Start buying"
-                        className="flex justify-center items-center w-full py-3 px-6 text-center rounded-full transition bg-emerald-800 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800"
+                        
+                        className="flex justify-center items-center w-full py-3 px-6 text-center rounded-lg transition bg-emerald-200 "
                       >
-                        <span className="block text-white text-sm">Resume</span>
+                        <span className="block text-gray-800 text-sm">+8801701741656</span>
                       </button>
                     </div>
                   </div>
@@ -85,10 +99,10 @@ const Navbar = () => {
                 <div className="block-endnav w-max flex items-center gap-4">
                   <button
                     type="button"
-                    title="Start buying"
-                    className="hidden sm:block w-full py-3 px-6 text-center rounded-full transition bg-emerald-800 hover:bg-cyan-500 active:bg-cyan-600 focus:bg-cyan-800 sm:w-max"
+                    
+                    className="hidden sm:block w-full py-3 px-6 text-center rounded-lg transition  bg-emerald-100 sm:w-max"
                   >
-                    <span className="block text-white text-sm">Resume</span>
+                    <span className="block text-gray-800 text-sm">+8801701741656</span>
                   </button>
 
                   <div className="flex items-center md:hidden max-h-10">
@@ -107,8 +121,8 @@ const Navbar = () => {
               </div>
             </div>
           </nav>
-      </header>
-  
+        </header>
+      </div>
     </>
   );
 };
