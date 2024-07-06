@@ -5,6 +5,7 @@ import { SiCodeforces } from "react-icons/si";
 import { LuFileCode2 } from "react-icons/lu";
 import { SiCodechef } from "react-icons/si";
 import { SiLeetcode } from "react-icons/si";
+import { GoCodescan } from "react-icons/go";
 
 
 const About = () => {
@@ -16,7 +17,8 @@ const About = () => {
 <div class="  py-16">
   <div class="container m-auto text-gray-600  md:px-12 xl:px-6">
     <div class="mb-12 space-y-4 px-6 md:px-0">
-      <h2 class="text-center text-2xl font-bold text-gray-800  md:text-3xl">
+      <h2 class="text-center text-2xl font-bold text-gray-800  md:text-3xl flex items-center justify-center">
+      <GoCodescan class="mr-1" />
       Problem Solving
       </h2>
       <p class="text-center">

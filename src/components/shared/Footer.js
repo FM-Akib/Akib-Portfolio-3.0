@@ -77,7 +77,7 @@ const Footer = () => {
       
             <div class="text-center">
               <span class="text-sm tracking-wide"
-                >Copyright © FM-Akib <span id="year"></span> | All right reserved</span
+                >Copyright ©<span class="font-semibold text-emerald-600"> FM-Akib </span><span id="year"></span> | All right reserved</span
               >
             </div>
           </div>

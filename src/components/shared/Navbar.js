@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navbar = () => {
   useEffect(() => {
@@ -97,6 +98,7 @@ const Navbar = () => {
                       </li>
                     </ul>
                     <div className="flex sm:hidden pt-4 w-full">
+                      <Link href="tel:+8801701741656" aria-label="call" >
                       <button
                         type="button"
                         
@@ -104,10 +106,12 @@ const Navbar = () => {
                       >
                         <span className="block text-gray-800 text-sm">+8801701741656</span>
                       </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="block-endnav w-max flex items-center gap-4">
+                <Link href="tel:+8801701741656" aria-label="call" >
                   <button
                     type="button"
                     
@@ -115,6 +119,7 @@ const Navbar = () => {
                   >
                     <span className="block text-gray-800 text-sm">+8801701741656</span>
                   </button>
+                  </Link>
 
                   <div className="flex items-center md:hidden max-h-10">
                     <label

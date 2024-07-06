@@ -14,7 +14,7 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <div className="flex  px-6 md:px-20  items-center justify-center bg-hero md:h-screen overflow-hidden">
+        <div className="flex  px-6 md:px-20 mt-14 md:mt-0  items-center justify-center bg-hero md:h-screen overflow-hidden">
     <div className="flex flex-col-reverse  gap-6 md:flex-row items-center max-w-8xl">
 
         <div className="gap-4  md:mt-20  flex md:flex-col items-center ">
