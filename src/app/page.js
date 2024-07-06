@@ -2,6 +2,7 @@ import Footer from '@/components/shared/Footer';
 import About from '@/components/ui/About';
 import Award from '@/components/ui/Award';
 import Cirtification from '@/components/ui/Cirtification';
+import ContactForm from '@/components/ui/ContactForm';
 import Education from '@/components/ui/Education';
 import Hero from '@/components/ui/Hero';
 import Projects from '@/components/ui/Projects';
@@ -31,6 +32,8 @@ const Home = () => {
       </section>
       
       <About/>
+
+      <ContactForm/>
 
       <Footer />
     </>
