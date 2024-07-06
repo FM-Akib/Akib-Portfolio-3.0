@@ -32,9 +32,9 @@ const Home = () => {
       </section>
       
       <About/>
-
+      <section id="contact">
       <ContactForm/>
-
+      </section>
       <Footer />
     </>
   );
