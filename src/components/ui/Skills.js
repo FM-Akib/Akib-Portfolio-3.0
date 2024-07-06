@@ -39,10 +39,10 @@ const Skills = () => {
               className="object-cover rounded-t-xl"
             />
             <div className="px-4 py-2 w-40">
-              <span className="text-gray-400 mr-3 uppercase text-xs">{askill.skillName}</span>
+              {/* <span className="text-gray-400 mr-3 uppercase text-xs">{askill.skillName}</span> */}
               {/* <p className="text-md font-bold text-black truncate block capitalize">Product Name</p> */}
               <div className="flex items-center">
-                <p className="text-sm font-semibold text-emerald-500 cursor-auto ">{askill.level}</p>
+                <p className="text-sm font-semibold text-emerald-500 cursor-auto ">{askill.skillName}</p>
   
               </div>
             </div>
