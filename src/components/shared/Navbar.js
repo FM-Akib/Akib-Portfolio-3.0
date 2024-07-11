@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
       <div className="bg-[#EFFBE3]">
         <header>
-          <nav className="fixed z-40 w-full border-b bg-[#EFFBE3] md:absolute md:bg-transparent">
+          <nav className="fixed z-40 w-full border-b bg-[#EFFBE3]/90 top-0 right-0 ">
             <div className="container m-auto px-2 md:px-12 lg:px-7">
               <div className="flex px-6 md:px-0 z-20 flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
                 <input type="checkbox" name="" id="toggleNav" className="peer hidden" />
