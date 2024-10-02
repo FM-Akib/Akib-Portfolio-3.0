@@ -28,8 +28,8 @@ const ContactForm = () => {
 
   return (
     <>
-    <div class="relative h-full w-full "><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
-
+    {/* <div class="relative h-full w-full "><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div> */}
+    
     <div className="text-center p-10">
       <h1 className="font-bold text-3xl text-gray-700 mb-2 flex items-center justify-center"><MdOutlineContactMail  class="mr-1 "/>Contact Me</h1>
       <h1 className="text-md text-gray-600">Send me your thoughts, I will get back with you by mail</h1>
@@ -38,9 +38,11 @@ const ContactForm = () => {
              
          
     <div class="w-full  px-4 ">
-        <div class="relative p-8 bg-white mx-auto lg:w-1/2 xl:w-7/12  rounded-lg   sm:p-12">
-            
-        <form className="space-y-8  bg-white " ref={form} onSubmit={sendEmail}>
+        <div class="relative   mx-auto lg:w-1/2 xl:w-7/12  rounded-lg   "
+        style={{ backgroundImage: `url(/assets/pattern9.png)` }}
+        >
+        <div className="p-8 sm:p-12 bg-[#F1FCE7]/85">
+        <form className="space-y-8  bg-[#F1FCE7]/80 " ref={form} onSubmit={sendEmail}>
          
         <div className="space-y-8 ">
          <div>
@@ -81,10 +83,10 @@ const ContactForm = () => {
         {error && <p class="text-red-500">{error}</p>}
         
       </form>
-             
+      </div>
         </div>
     </div>
-    </div>
+    {/* </div> */}
 
     
    
