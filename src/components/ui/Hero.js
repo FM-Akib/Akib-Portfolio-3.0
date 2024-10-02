@@ -64,9 +64,10 @@ const Hero = () => {
                 </Link>
                
                <Link class="cursor-pointer" href="https://drive.usercontent.google.com/u/0/uc?id=16QxDGtNJFIDVwykuu5bWUW48iypmB_Hk&export=download" target="_blank">
-                <button className="w-full flex items-center justify-center mt-4 sm:mt-0 sm:ml-4 sm:w-40 px-4 py-3 rounded font-semibold text-md bg-white hover:bg-slate-100 text-emerald-500 border-2 border-emerald-200">Resume <LuDownload className='ml-2' />
+                <button className="w-full flex items-center justify-center mt-4 sm:mt-0 sm:ml-4 sm:w-40 px-4 py-3 rounded font-semibold text-md bg-white hover:bg-slate-100 text-emerald-500 border-2 border-emerald-200">Resume <LuDownload className='animate-bounce ml-2' />
                 </button>
                 </Link>
+
             </div>
         </div>
 

@@ -10,6 +10,16 @@
       "LiveLink": "https://note-nest-21dd0.web.app/"
     },
     {
+      "projectName": "Event Ease",
+      "img": "https://i.ibb.co.com/KVqXtzF/Screenshot-2024-10-02-231153.png",
+      "keyFeature": "1. User Features: Explore and book venues, create invitations, and access a personalized dashboard.\n2. Hall Owner Features: Track bookings, register venues, and manage via a personalized dashboard.\n",
+      "projectDate": "Apr 2024",
+      "skillsArray": ["Tailwind CSS","React.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
+      "githubLink": "https://github.com/FM-Akib/Event-Ease-React.git",
+      "githubServer": "https://github.com/FM-Akib/Event-Ease-server.git",
+      "LiveLink": "https://event-ease-cc06b.web.app/"
+    },
+    {
       "projectName": "Bangla Bhai Restaurant Project",
       "img": "https://i.ibb.co/zm1FQwd/Bangla-Bhai.png",
       "keyFeature": "1. User Features: \n- Browse menu & place orders - Pay securely with cards - Save cart information - Access personalized dashboard\n2. Admin Features: \n- Track total orders & revenue - Add new admins - Edit & delete menu items - Manage users & view their orders - Access secure dashboard",

@@ -9,9 +9,10 @@ import Projects from '@/components/ui/Projects';
 import Skills from '@/components/ui/Skills';
 import React from 'react';
 
+
 const Home = () => {
   return (
-    <>
+    <div >
       <section id="hero">
         <Hero />
       </section>
@@ -36,7 +37,7 @@ const Home = () => {
       <ContactForm/>
       </section>
       <Footer />
-    </>
+    </div>
   );
 };
 

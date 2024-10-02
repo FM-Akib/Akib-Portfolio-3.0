@@ -13,13 +13,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[#EFFBE3] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
-        <Navbar/>
-        <div className="md:px-16 bg-[#EFFBE3]">
-        {children}
+        <Navbar />
+        {/* <div className="md:px-16 bg-[#EFFBE3]"> */}
+        <div
+          className="bg-contain "
+          style={{ backgroundImage: `url(/assets/pattern.webp)` }} // Updated path
+        >
+          <div className="bg-[#EFFBE3]/85 md:px-16">
+          {children}
+          </div>
         </div>
-        </div>
-        </body>
+      </body>
     </html>
   );
 }

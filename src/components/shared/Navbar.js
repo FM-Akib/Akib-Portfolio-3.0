@@ -6,15 +6,26 @@ import Link from 'next/link';
 const Navbar = () => {
   useEffect(() => {
     const script = document.createElement('script');
-    script.innerHTML = `
-      kofiWidgetOverlay.draw('mohamedghulam', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support me',
-        'floating-chat.donateButton.background-color': '#323842',
-        'floating-chat.donateButton.text-color': '#fff'
-      });
-    `;
+    script.src = "https://cdn.ko-fi.com/widgetoverlay.js";
+    script.async = true;
+    script.onload = () => {
+      if (typeof kofiWidgetOverlay !== "undefined") {
+        kofiWidgetOverlay.draw('mohamedghulam', {
+          'type': 'floating-chat',
+          'floating-chat.donateButton.text': 'Support me',
+          'floating-chat.donateButton.background-color': '#323842',
+          'floating-chat.donateButton.text-color': '#fff'
+        });
+      } else {
+        console.error("kofiWidgetOverlay is not defined");
+      }
+    };
     document.body.appendChild(script);
+
+    // Clean up script on component unmount
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -35,7 +46,7 @@ const Navbar = () => {
                 ></label>
                 <div className="relative z-40">
                   <a href="#" aria-label="logo">
-                    <Image src="https://i.ibb.co/DWxtttS/logo.png" className="w-32 sm:w-36" alt="tailus logo" width={144} height={68} />
+                    <Image src="https://i.ibb.co/DWxtttS/logo.png" className="w-32 sm:w-36" alt="logo" width={144} height={68} />
                   </a>
                 </div>
 
@@ -98,27 +109,25 @@ const Navbar = () => {
                       </li>
                     </ul>
                     <div className="flex sm:hidden pt-4 w-full">
-                      <Link href="tel:+8801701741656" aria-label="call" >
-                      <button
-                        type="button"
-                        
-                        className="flex justify-center items-center w-full py-3 px-6 text-center rounded-lg transition bg-emerald-200 "
-                      >
-                        <span className="block text-gray-800 text-sm">+8801701741656</span>
-                      </button>
+                      <Link href="tel:+8801701741656" aria-label="call">
+                        <button
+                          type="button"
+                          className="flex justify-center items-center w-full py-3 px-6 text-center rounded-lg transition bg-emerald-200"
+                        >
+                          <span className="block text-gray-800 text-sm">+8801701741656</span>
+                        </button>
                       </Link>
                     </div>
                   </div>
                 </div>
                 <div className="block-endnav w-max flex items-center gap-4">
-                <Link href="tel:+8801701741656" aria-label="call" >
-                  <button
-                    type="button"
-                    
-                    className="hidden sm:block w-full py-3 px-6 text-center rounded-lg transition  bg-emerald-100 sm:w-max"
-                  >
-                    <span className="block text-gray-800 text-sm">+8801701741656</span>
-                  </button>
+                  <Link href="tel:+8801701741656" aria-label="call">
+                    <button
+                      type="button"
+                      className="hidden sm:block w-full py-3 px-6 text-center rounded-lg transition bg-emerald-100 sm:w-max"
+                    >
+                      <span className="block text-gray-800 text-sm">+8801701741656</span>
+                    </button>
                   </Link>
 
                   <div className="flex items-center md:hidden max-h-10">
