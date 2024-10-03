@@ -31,7 +31,7 @@ const About = () => {
           <div class="p-2 border border-gray-100  rounded-3xl bg-white  shadow-2xl shadow-gray-600/10  md:mx-auto lg:w-10/12 xl:w-8/12">
             <div class="grid md:grid-cols-5">
               <Image
-                src="https://i.ibb.co/F52yz1n/In-Shot-20240706-004155921.jpg"
+                src="https://i.ibb.co.com/bKcKMvT/photo-2024-10-04-00-31-35.jpg"
                 class="md:col-span-2 h-full w-full rounded-2xl object-cover"
                 alt="image"
                 width="640"

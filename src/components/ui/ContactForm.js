@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { MdOutlineContactMail } from "react-icons/md";
 import { BiSend } from "react-icons/bi";
+import Button from './Button';
 
 
 
@@ -71,12 +72,13 @@ const ContactForm = () => {
 
 
         <div>
-           <button
+          <Button loading={loading} />
+           {/* <button
               type="submit" value="Send" disabled={loading}
-              class="flex items-center justify-center w-full p-3 text-gray-800 bg-[#EFFBE3] hover:bg-emerald-200 transition border rounded border-primary bg-primary hover:bg-opacity-90"
+              class="flex items-center justify-center w-full p-3 text-gray-800 bg-[#EFFBE3] hover:bg-emerald-200 transition  rounded   hover:bg-opacity-90"
               >
            Send Message <BiSend class="text-xl ml-1"  />
-           </button>
+           </button> */}
         </div>
 
         {loading && <p class="text-green-500">Sending...</p>}

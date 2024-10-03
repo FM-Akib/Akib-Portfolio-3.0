@@ -4,8 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  darkMode: 'class',  
+  ], 
   theme: {
     extend: {
       backgroundImage: {
@@ -40,16 +39,7 @@ module.exports = {
   plugins: [require('daisyui')],
   daisyui: {
     themes: [
-      {
-        light: {
-          primary: "#EFFBE3",    // Your custom primary color
-          secondary: "#f6d860",  // Example secondary color (customize as needed)
-          accent: "#37cdbe",     // Example accent color
-          neutral: "#3d4451",    // Neutral
-          "base-100": "#EFFBE3", // Background color
-        },
-      },
-      "dark",  // Keep dark theme if needed
+      "light",
     ],
   },
 };
