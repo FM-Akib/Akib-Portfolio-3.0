@@ -31,7 +31,6 @@ const Home = () => {
       <section id="education">
         <Education />
       </section>
-      
       <About/>
       <section id="contact">
       <ContactForm/>

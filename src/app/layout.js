@@ -15,14 +15,15 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {/* <div className="md:px-16 bg-[#EFFBE3]"> */}
-        <div
+        {/* <div
           className="bg-contain "
           style={{ backgroundImage: `url(/assets/pattern.webp)` }} // Updated path
-        >
-          <div className="bg-[#EFFBE3]/85 md:px-16">
+        > */}
+          {/* <div className="bg-[#EFFBE3]/85 md:px-16"> */}
+          <div className=" md:px-16">
           {children}
           </div>
-        </div>
+        {/* </div> */}
       </body>
     </html>
   );

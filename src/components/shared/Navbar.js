@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Switch from '../ui/Switch';
 
 const Navbar = () => {
   useEffect(() => {
@@ -107,7 +108,16 @@ const Navbar = () => {
                           </div>
                         </a>
                       </li>
+
+                      <li className="max-w-max">
+                        <Switch/>
+                      </li>
+
+
                     </ul>
+
+
+
                     <div className="flex sm:hidden pt-4 w-full">
                       <Link href="tel:+8801701741656" aria-label="call">
                         <button
