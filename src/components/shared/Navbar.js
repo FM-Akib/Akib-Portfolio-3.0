@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Switch from '../ui/Switch';
+// import Switch from '../ui/Switch';
 
 const Navbar = () => {
   useEffect(() => {
@@ -109,9 +109,9 @@ const Navbar = () => {
                         </a>
                       </li>
 
-                      <li className="max-w-max">
+                      {/* <li className="max-w-max md:ps-5">
                         <Switch/>
-                      </li>
+                      </li> */}
 
 
                     </ul>

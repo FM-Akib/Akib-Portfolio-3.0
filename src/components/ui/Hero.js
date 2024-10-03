@@ -13,6 +13,9 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 
 const Hero = () => {
+
+    
+
     return (
         <div className="flex  px-6 md:px-20 mt-14 md:mt-0  items-center justify-center bg-hero md:h-screen overflow-hidden">
     <div className="flex flex-col-reverse  gap-6 md:flex-row items-center max-w-8xl">
@@ -41,7 +44,7 @@ const Hero = () => {
         </div>
 
         <div className="w-full md:w-1/2 ">
-            <h2 className="caveat-brush-regular text-xl lg:text-5xl text-center md:text-left text-[#393939] leading-tight font-medium">
+            <h2 className="caveat-brush-regular text-xl lg:text-5xl text-center md:text-left text-[#393939]  leading-tight font-medium">
                 Mohammad Fahim Muntasir Akib.</h2>
                 <div className="flex  items-center justify-start my-2 bg-gradient-to-tr  ">
                 <div className="w-max flex items-center">
