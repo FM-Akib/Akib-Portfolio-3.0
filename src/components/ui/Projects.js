@@ -55,7 +55,7 @@ const Projects = () => {
                             <div className="sm:w-2/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
                                 <Image
                                     src={aproject.img}
-                                    alt="art cover"
+                                    alt={aproject.projectName}
                                     loading="lazy"
                                     width={1000}
                                     height={667}
@@ -111,7 +111,7 @@ const Projects = () => {
                                         </div>
                                     ))
                                     }
-                                                                    </p>
+                                    </p>
 
                                 <div className="flex gap-2 flex-wrap self-end">
                                     {aproject.skillsArray.map((askill, i) => (
