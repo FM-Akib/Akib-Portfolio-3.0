@@ -48,9 +48,9 @@ const Projects = () => {
                     {projects?.map((aproject, i) => (
                         <div
                             key={i}
-                            className="group relative -mx-4 sm:-mx-8 p-6 sm:p-8 rounded-3xl bg-white border border-transparent hover:border-gray-100 shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex transition duration-300 hover:z-10"
-                            data-aos="zoom-in" // Apply AOS attribute here
-                            data-aos-anchor-placement="top-center"
+                            className="group relative -mx-4 sm:-mx-8 p-4 sm:p-8 rounded-3xl bg-white border border-transparent hover:border-gray-100 shadow-2xl shadow-transparent hover:shadow-gray-600/10 sm:gap-8 sm:flex transition duration-300 hover:z-10"
+                            // data-aos="zoom-in" // Apply AOS attribute here
+                            // data-aos-anchor-placement="top-center"
                         >
                             <div className="sm:w-2/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
                                 <Image
@@ -64,25 +64,25 @@ const Projects = () => {
                             </div>           
                             <div className="sm:p-2 sm:pl-0 sm:w-4/6">
                                 <span className="mt-4 mb-4 w-full font-medium text-gray-400 sm:mt-0 flex items-center justify-between">
-                                    <span className="flex items-center flex-col md:flex-row">
+                                    <span className="flex items-center flex-col md:flex-row ">
                                         <CiCalendarDate className="text-lg mr-1" />
-                                        {aproject.projectDate}
+                                       <span className='text-xs md:text-sm'>{aproject.projectDate}</span> 
                                     </span>
                                     <span className='flex md:gap-2'>
                                         <Link
                                             href={aproject.LiveLink}
-                                            className="relative flex w-full items-center justify-center md:px-4 px-2 py-1 before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                                            className="bg-yellow-200 rounded-md text-neutral-800 transition-all duration-200 hover:bg-neutral-800 hover:text-white relative flex w-full items-center justify-center md:px-4 px-2 py-1 before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                                         >
-                                            <span className="relative text-base font-semibold text-sky-600 flex items-center">
+                                            <span className="relative text-base font-semibold flex items-center">
                                                 Live <AiOutlineLink className="ml-1" />
                                             </span>
                                         </Link>
 
                                         <Link
                                             href={aproject.githubLink}
-                                            className="relative flex w-full items-center justify-center md:px-4 px-2 py-1 before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                                            className="transition-all duration-200 hover:bg-neutral-800 hover:text-white rounded-md relative flex w-full items-center justify-center md:px-4 px-2 py-1 before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                                         >
-                                            <span className="relative text-base font-semibold text-sky-600 flex items-center">
+                                            <span className="relative text-base font-semibold  flex items-center">
                                                 Client <AiOutlineLink className="ml-1" />
                                             </span>
                                         </Link>
@@ -90,9 +90,9 @@ const Projects = () => {
                                         {aproject.githubServer && (
                                             <Link
                                                 href={aproject.githubServer}
-                                                className="relative flex w-full items-center justify-center md:px-4 px-2 py-1 before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                                                className="transition-all duration-200 hover:bg-neutral-800 hover:text-white rounded-md relative flex w-full items-center justify-center md:px-4 px-2 py-1 before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                                             >
-                                                <span className="relative text-base font-semibold text-sky-600 flex items-center">
+                                                <span className="relative text-base font-semibold  flex items-center">
                                                     Server <AiOutlineLink className="ml-1" />
                                                 </span>
                                             </Link>
@@ -103,14 +103,21 @@ const Projects = () => {
                                     {aproject.projectName}
                                 </h3>
                                 <p className="my-3 text-gray-600 text-sm whitespace-pre-wrap">
-                                    {aproject.keyFeature}
-                                </p>
+                                    {/* {aproject.keyFeature} */}
+                                    {
+                                    aproject?.keyFeature?.map((feature, index) => (
+                                        <div key={index} className='my-2'>
+                                        <strong>{feature.title}:</strong> {feature.description}
+                                        </div>
+                                    ))
+                                    }
+                                                                    </p>
 
-                                <div className="flex gap-2 flex-wrap">
+                                <div className="flex gap-2 flex-wrap self-end">
                                     {aproject.skillsArray.map((askill, i) => (
                                         <span
                                             key={i}
-                                            className="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:border-gray-300"
+                                            className="px-3 py-1 md:mt-4 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white hover:border-gray-300"
                                         >
                                             {askill}
                                         </span>

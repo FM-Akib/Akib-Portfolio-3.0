@@ -1,61 +1,131 @@
 [
-    {
-      "projectName": "Note Nest",
-      "img": "https://i.ibb.co/JmP1h9P/Note-Nest2.png",
-      "keyFeature": "1. Intuitive Note Organization: Efficiently manage and categorize notes with a user-friendly interface, ensuring quick access and seamless navigation.\n2. Collaborative Environment: Share notes and collaborate in real-time with peers, fostering a productive and interactive learning experience.\n3. Advanced Search Functionality: Quickly find specific notes or topics using robust search and filter options, saving time and enhancing productivity.",
-      "projectDate": "Jun 2024",
-      "skillsArray": ["Tailwind CSS","React.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
-      "githubLink": "https://github.com/FM-Akib/Note-Nest.git",
-      "githubServer": "https://github.com/FM-Akib/note-nest-server.git",
-      "LiveLink": "https://note-nest-21dd0.web.app/"
-    },
-    {
-      "projectName": "Event Ease",
-      "img": "https://i.ibb.co.com/KVqXtzF/Screenshot-2024-10-02-231153.png",
-      "keyFeature": "1. User Features: Explore and book venues, create invitations, and access a personalized dashboard.\n2. Hall Owner Features: Track bookings, register venues, and manage via a personalized dashboard.\n",
-      "projectDate": "Apr 2024",
-      "skillsArray": ["Tailwind CSS","React.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
-      "githubLink": "https://github.com/FM-Akib/Event-Ease-React.git",
-      "githubServer": "https://github.com/FM-Akib/Event-Ease-server.git",
-      "LiveLink": "https://event-ease-cc06b.web.app/"
-    },
-    {
-      "projectName": "Bangla Bhai Restaurant Project",
-      "img": "https://i.ibb.co/zm1FQwd/Bangla-Bhai.png",
-      "keyFeature": "1. User Features: \n- Browse menu & place orders - Pay securely with cards - Save cart information - Access personalized dashboard\n2. Admin Features: \n- Track total orders & revenue - Add new admins - Edit & delete menu items - Manage users & view their orders - Access secure dashboard",
-      "projectDate": "May 2024",
-      "skillsArray": ["React.js", "Tailwind CSS", "Express.js", "MongoDB", "Stripe", "JWT", "Firebase"],
-      "githubLink": "https://github.com/FM-Akib/bangla-bhai-restaurent.git",
-      "githubServer": "https://github.com/FM-Akib/bangla-bhai-restaurent-server.git",
-      "LiveLink": "https://bangla-bhai-restaurent.web.app"
-    },
-    {
-      "projectName": "Diptosikha Social Organization Website",
-      "img": "https://i.ibb.co/Nn9QWmW/diptosikha.png",
-      "keyFeature": "1. Comprehensive Tech Stack: Utilizing the MERN stack, engineered a robust and scalable solution to meet the organization's needs.\n2. Focus on UI/UX Excellence: Prioritized user interface and user experience design to deliver a visually appealing and intuitive platform.\n3. Future Endeavors: Continually refining skills in MERN stack web development to create more innovative applications.",
-      "projectDate": "Mar 2024",
-      "skillsArray": ["React.js", "Node.js", "Tailwind CSS", "Express.js", "MongoDB", "Firebase"],
-      "githubLink": "https://github.com/FM-Akib/Diptosikha.git",
-      "githubServer": "https://github.com/FM-Akib/diptosikha-server.git",
-      "LiveLink": "https://diptoshikha-d040d.web.app"
-    },
-    {
-      "projectName": "Mess Management System",
-      "img": "https://i.ibb.co/kHc1pqf/Mess-Management-System.png",
-      "keyFeature": "1. Learning and Growth: Delved deep into Java programming and utilized NetBeans as the development environment.\n2. Recognition and Mentorship: Gained invaluable insights into industry practices under the mentorship of Md Shofiuddin.\n3. Hands-On Experience: Showcased proficiency in Java programming and MySQL, developing scalable and user-friendly web applications.",
-      "projectDate": "May 2023",
-      "skillsArray": ["Java", "MySQL", "NetBeans"],
-      "githubLink": "https://github.com/FM-Akib/Mess-Management-System.git",
-      "LiveLink": "https://youtu.be/Jqh-8yYXhHI?si=6hx7H6l4Ec2WY6ge"
-    },
-    {
-      "projectName": "Restaurant Management System",
-      "img": "https://i.ibb.co/Yj7pqDH/restaurent-management-sys.png",
-      "keyFeature": "1. Award-Winning Achievement: Achieved excellence in project execution, earning the Best Project Award.\n2. Feature-Rich Solution: Integrated features such as order management and inventory tracking for operational efficiency.\n3. First Team Project Success: Led a team in developing a comprehensive platform to streamline restaurant operations.",
-      "projectDate": "Dec 2022",
-      "skillsArray": ["C++", "Object-Oriented Programming (OOP)", "Qt"],
-      "githubLink": "https://github.com/FM-Akib/Restaurent-Management-System.git",
-      "LiveLink": "https://youtu.be/1U1-szq1fMY?si=L-ZqbA7jHPDnRW7h"
-    }
-  ]
+  {
+    "projectName": "Note Nest",
+    "img": "https://i.ibb.co.com/9ZxcZQ3/nn.png",
+    "keyFeature": [
+      {
+        "title": "Intuitive Note Organization",
+        "description": "Efficiently manage and categorize notes with a user-friendly interface, ensuring quick access and seamless navigation."
+      },
+      {
+        "title": "Collaborative Environment",
+        "description": "Share notes and collaborate in real-time with peers, fostering a productive and interactive learning experience."
+      },
+      {
+        "title": "Advanced Search Functionality",
+        "description": "Quickly find specific notes or topics using robust search and filter options, saving time and enhancing productivity."
+      }
+    ],
+    "projectDate": "Jun 2024",
+    "skillsArray": ["Tailwind CSS","React.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
+    "githubLink": "https://github.com/FM-Akib/Note-Nest.git",
+    "githubServer": "https://github.com/FM-Akib/note-nest-server.git",
+    "LiveLink": "https://note-nest-21dd0.web.app/"
+  },
+  {
+    "projectName": "Event Ease",
+    "img": "https://i.ibb.co.com/d63NCD2/ee.png",
+    "keyFeature": [
+      {
+        "title": "User Features",
+        "description": "Explore and book venues, create invitations, and access a personalized dashboard."
+      },
+      {
+        "title": "Hall Owner Features",
+        "description": "Track bookings, register venues, and manage via a personalized dashboard."
+      }
+    ],
+    "projectDate": "Apr 2024",
+    "skillsArray": ["Tailwind CSS","React.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
+    "githubLink": "https://github.com/FM-Akib/Event-Ease-React.git",
+    "githubServer": "https://github.com/FM-Akib/Event-Ease-server.git",
+    "LiveLink": "https://event-ease-cc06b.web.app/"
+  },
+  {
+    "projectName": "Diptosikha Social Organization Website",
+    "img": "https://i.ibb.co.com/XbgFkD5/dd.png",
+    "keyFeature": [
+      {
+        "title": "Comprehensive Tech Stack",
+        "description": "Utilizing the MERN stack, engineered a robust and scalable solution to meet the organization's needs."
+      },
+      {
+        "title": "Focus on UI/UX Excellence",
+        "description": "Prioritized user interface and user experience design to deliver a visually appealing and intuitive platform."
+      },
+      {
+        "title": "Future Endeavors",
+        "description": "Continually refining skills in MERN stack web development to create more innovative applications."
+      }
+    ],
+    "projectDate": "Mar 2024",
+    "skillsArray": ["React.js", "Node.js", "Tailwind CSS", "Express.js", "MongoDB", "Firebase"],
+    "githubLink": "https://github.com/FM-Akib/Diptosikha.git",
+    "githubServer": "https://github.com/FM-Akib/diptosikha-server.git",
+    "LiveLink": "https://diptoshikha-d040d.web.app"
+  },
+  {
+    "projectName": "Bangla Bhai Restaurant Project",
+    "img": "https://i.ibb.co.com/xjmdHdj/bb.png",
+    "keyFeature": [
+      {
+        "title": "User Features",
+        "description": "- Browse menu & place orders - Pay securely with cards - Save cart information - Access personalized dashboard"
+      },
+      {
+        "title": "Admin Features",
+        "description": "- Track total orders & revenue - Add new admins - Edit & delete menu items - Manage users & view their orders - Access secure dashboard"
+      }
+    ],
+    "projectDate": "May 2024",
+    "skillsArray": ["React.js", "Tailwind CSS", "Express.js", "MongoDB", "Stripe", "JWT", "Firebase"],
+    "githubLink": "https://github.com/FM-Akib/bangla-bhai-restaurent.git",
+    "githubServer": "https://github.com/FM-Akib/bangla-bhai-restaurent-server.git",
+    "LiveLink": "https://bangla-bhai-restaurent.web.app"
+  },
   
+  {
+    "projectName": "Mess Management System",
+    "img": "https://i.ibb.co/kHc1pqf/Mess-Management-System.png",
+    "keyFeature": [
+      {
+        "title": "Learning and Growth",
+        "description": "Delved deep into Java programming and utilized NetBeans as the development environment."
+      },
+      {
+        "title": "Recognition and Mentorship",
+        "description": "Gained invaluable insights into industry practices under the mentorship of Md Shofiuddin."
+      },
+      {
+        "title": "Hands-On Experience",
+        "description": "Showcased proficiency in Java programming and MySQL, developing scalable and user-friendly web applications."
+      }
+    ],
+    "projectDate": "May 2023",
+    "skillsArray": ["Java", "MySQL", "NetBeans"],
+    "githubLink": "https://github.com/FM-Akib/Mess-Management-System.git",
+    "LiveLink": "https://youtu.be/Jqh-8yYXhHI?si=6hx7H6l4Ec2WY6ge"
+  },
+  {
+    "projectName": "Restaurant Management System",
+    "img": "https://i.ibb.co/Yj7pqDH/restaurent-management-sys.png",
+    "keyFeature": [
+      {
+        "title": "Award-Winning Achievement",
+        "description": "Achieved excellence in project execution, earning the Best Project Award."
+      },
+      {
+        "title": "Feature-Rich Solution",
+        "description": "Integrated features such as order management and inventory tracking for operational efficiency."
+      },
+      {
+        "title": "First Team Project Success",
+        "description": "Led a team in developing a comprehensive platform to streamline restaurant operations."
+      }
+    ],
+    "projectDate": "Dec 2022",
+    "skillsArray": ["C++", "Object-Oriented Programming (OOP)", "Qt"],
+    "githubLink": "https://github.com/FM-Akib/Restaurent-Management-System.git",
+    "LiveLink": "https://youtu.be/1U1-szq1fMY?si=L-ZqbA7jHPDnRW7h"
+  }
+]
